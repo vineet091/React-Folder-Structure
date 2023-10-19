@@ -1,0 +1,47 @@
+.App {
+  font-family: sans-serif;
+  width: 80%;
+  padding: 20px;
+}
+
+.dot,
+.item.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.triangle {
+  width: 6px;
+  height: 20px;
+  margin-right: 24px;
+  vertical-align: middle;
+}
+
+.triangle::after {
+  content: "▼";
+}
+.close::after {
+  content: "▶";
+}
+
+.heading,
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.parent .title {
+  cursor: pointer;
+  color: blue;
+}
